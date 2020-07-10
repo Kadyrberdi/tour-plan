@@ -1,2 +1,3 @@
 # tour-plan
-Ivanov Ivan
+
+Kadyrberdi Nurberdiyev
