@@ -30,23 +30,23 @@
   .navbar    
     &__search, &-menu, &__user
       display: none
-.menu
-  &-button
-    display: flex
-    width: 16px
-    height: 11px
-    align-items: center
-    justify-content: space-between
-    flex-direction: column
-    border: none
-    cursor: pointer
-    background-color: $light
-    &__line
+  .menu
+    &-button
+      display: flex
       width: 16px
-      height: 1px
-      background-color: $text-color
-
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      cursor: pointer
+      background-color: $light
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+ 
 @media ( max-width: 576px )
   .logo
     width: 99px
-  
