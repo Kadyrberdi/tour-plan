@@ -523,6 +523,7 @@ template {
 .hotel-info__description {
   font-size: 12px;
   line-height: 15px;
+  margin: 5px 0;
 }
 
 .hotel-info__offer {
@@ -530,11 +531,11 @@ template {
   margin-top: 4px;
 }
 
-.hotel-name {
-  font-size: 24px;
-  line-height: 30px;
+.hotel-info__name {
   margin-top: 4px;
   margin-bottom: 0;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .hotel-wrapper {
@@ -668,6 +669,10 @@ template {
 
 .hotel-info__text {
   width: 100%;
+}
+
+.hotel-info__name {
+  margin-top: 10px;
 }
 
 .hotel-info__rating {
