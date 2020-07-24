@@ -42,13 +42,17 @@
     width: 100%  
   .yandex-map
     width: 340px
+  .newsletter
+    &-wrapper
+      max-width: 700px
 @media ( max-width: 768px )
   .container
     max-width: 576px
     width: 92%
-  .navbar    
-    &__search, &-menu, &__user
-      display: none
+  .navbar
+    &-top
+      &__search, &-menu, &__user
+        display: none
   .menu
     &-button
       display: flex
@@ -93,6 +97,21 @@
     margin-bottom: 20px
   .yandex-map
     width: 100%
+  .newsletter
+    padding-top: 76px
+    padding-bottom: 83px
+    &-wrapper
+      max-width: 92%
+      flex-direction: column
+      align-items: flex-start
+    &-title
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 37px
+      &__strong
+        font-size: 30px;
+        line-height: 38px;
+  
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -101,3 +120,5 @@
   .hotel
     &__slider
       margin-bottom: 20px
+  .subscribe
+    width: 100%
