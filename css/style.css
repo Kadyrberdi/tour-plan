@@ -976,7 +976,10 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar-top__search, .navbar-top-menu, .navbar-top__user {
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-top__search, .navbar-top__user {
     display: none;
   }
   .menu-button {
