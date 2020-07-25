@@ -1,8 +1,9 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 590px
+  .hotel
+    &-slider
+      width: 590px
   .swiper
     &-slide
       &__image
@@ -33,13 +34,12 @@
     &-grid
       flex-direction: column
     &__slider
+      width: 100%
       margin-bottom: 30px
     &-price-map
       flex-direction: row
   .booking
-    width: 340px
-  .slider
-    width: 100%  
+    width: 340px  
   .yandex-map
     width: 340px
   .newsletter
@@ -88,8 +88,8 @@
       &__offer
         order: -1
         margin-left: 0
-  .slider
-    height: 350px
+    &-slider
+      height: 350px
   .hotel
     &-price-map
       flex-direction: column
@@ -117,10 +117,9 @@
 @media ( max-width: 576px )
   .logo
     width: 99px
-  .slider
-    height: 250px  
   .hotel
     &__slider
+      height: 250px
       margin-bottom: 20px
   .subscribe
     width: 100%
