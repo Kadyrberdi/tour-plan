@@ -831,6 +831,11 @@ template {
   grid-gap: 30px;
 }
 
+.other-hotels__cards:nth-child(1) {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
 .other-hotels__card {
   width: 350px;
   height: 500px;
@@ -1540,10 +1545,6 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
-  }
-  .hotel__slider {
-    max-width: 278px;
-    max-height: 179px;
     margin-bottom: 20px;
   }
   .subscribe {
@@ -1554,6 +1555,13 @@ template {
   }
   .card {
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hotel__slider {
+    max-width: 278px;
+    max-height: 179px;
   }
 }
 /*# sourceMappingURL=style.css.map */
