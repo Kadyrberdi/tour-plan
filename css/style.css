@@ -933,7 +933,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
 }
 
 .booking__geolocation, .booking__guests, .booking__room {
