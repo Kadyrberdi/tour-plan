@@ -826,9 +826,9 @@ template {
 .other-hotels__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (auto)[2];
-  -ms-grid-columns: (auto)[3];
-      grid-template: repeat(2, auto)/repeat(3, auto);
+  -ms-grid-rows: (500px)[2];
+  -ms-grid-columns: (350px)[3];
+      grid-template: repeat(2, 500px)/repeat(3, 350px);
   grid-gap: 30px;
 }
 
@@ -838,13 +838,33 @@ template {
 }
 
 .other-hotels__card {
+  position: relative;
   width: 350px;
   height: 500px;
 }
 
-.other-hotels__card--0 {
-  padding-right: 0;
-  padding-bottom: 30px;
+.other-hotels__card--1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 730px;
+}
+
+.other-hotels__offer {
+  position: absolute;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
+  left: 0;
+  top: 26px;
+}
+
+.other-hotels__offer--1 {
+  padding: 8px 12px;
 }
 
 .other-hotels__image {

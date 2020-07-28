@@ -11,16 +11,30 @@
     padding-bottom: 65px
   &__cards
     display: grid
-    grid-template: repeat(2, auto) / repeat(3, auto)
+    grid-template: repeat(2, 500px) / repeat(3, 350px)
     grid-gap: 30px
     &:nth-child(1)
       grid-column-start: span 2      
   &__card
+    position: relative
     width: 350px
     height: 500px 
-    &--0
-      padding-right: 0
-      padding-bottom: 30px
+    &--1
+      display: flex
+      width: 730px
+  &__offer
+    position: absolute
+    padding: 4px 9px
+    background-color: $primary
+    color: $light
+    border: none
+    outline: none
+    cursor: pointer
+    border-radius: 0px 4px 4px 0px;
+    left: 0
+    top: 26px
+    &--1
+      padding: 8px 12px
   &__image
     width: 350px
     height: 250px
