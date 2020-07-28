@@ -9,17 +9,18 @@
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 65px
+    margin: 0
   &__cards
     display: grid
     grid-template: repeat(2, 500px) / repeat(3, 350px)
     grid-gap: 30px
-    &:nth-child(1)
-      grid-column-start: span 2      
   &__card
+    display: grid
     position: relative
     width: 350px
     height: 500px 
     &--1
+      grid-column: 1 / 3 
       display: flex
       width: 730px
   &__offer
