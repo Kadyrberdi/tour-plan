@@ -1426,8 +1426,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
@@ -1470,6 +1471,7 @@ template {
 }
 
 .footer__input {
+  max-width: 250px;
   background-color: #fff;
   border-radius: 4px;
   border: none;
@@ -1481,6 +1483,9 @@ template {
 }
 
 .footer__message {
+  max-width: 545px;
+  max-height: 123px;
+  resize: none;
   background-color: #fff;
   border-radius: 4px;
   padding: 18px 23px;
@@ -1508,7 +1513,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
 }
 
 .footer__bottom {
