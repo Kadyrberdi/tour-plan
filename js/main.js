@@ -11,7 +11,7 @@ var hotelSlider = new Swiper(".hotel-slider", {
   grabCursor: true,
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
 });
 var reviewSlider = new Swiper(".reviews-slider", {
@@ -26,6 +26,6 @@ var reviewSlider = new Swiper(".reviews-slider", {
   grabCursor: true,
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
 });
