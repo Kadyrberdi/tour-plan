@@ -215,34 +215,59 @@
   .card
     width: 48%
   .other-hotels
+    &__title
+      font-size: 26px
+      line-height: 34px
+      padding-bottom: 35px    
     &__cards
-      grid-template-columns: repeat(1, auto)
-      grid-gap: 30px
-      justify-content: center      
+      grid-gap: 10px
     &__card
+      max-height: 500px
       &--1
-        grid-column: span 1
-        flex-direction: column
-        width: 350px
-    &__offer
-      &--1
-        padding: 4px 9px
+        max-width: 576px
+        width: 100%
+        max-height: 500px
     &__image
-      width: 350px
+      max-width: 283px
+      width: 100%
       &--1
-        display: grid
-        grid-direction: column
-        width: 350px
-        height: 250px
-        border-radius: 8px 8px 0px 0px;
+        max-width: 288px
+        width: 100%
     &__booking
-      width: 350px
+      max-width: 283px
+      width: 100%      
+      padding: 20px 12px 15px 20px
       &--1
-        height: 250px
-        border-radius: 0px 0px 8px 8px;
-        padding: 30px 21px 25px 32px
-    &__description, &__ratings
-      display: none
+        max-width: 288px
+        width: 100%
+        height: 500px
+        padding: 30px 16px 30px 30px
+      &-info
+        padding-bottom: 0
+    &__image
+      &--1
+        height: 500px
+    &__offer
+      font-size: 10px
+      padding: 2px 8px
+      &--1
+        padding: 2px 8px
+        font-size: 10px
+    &__name
+      font-size: 14px
+      line-height: 100%
+      padding-bottom: 15px
+    &__button
+      font-weight: normal
+      padding: 4px 9px
+      font-size: 10px
+    &__description
+      font-size: 12px
+      padding-bottom: 10px
+    .old-price
+      font-size: 12px
+    .new-price
+      font-size: 18px
   .footer
     &__input
       flex-basis: 100%
@@ -260,6 +285,66 @@
       margin-bottom: 37px
   .card
     width: 100%
+  .other-hotels
+    &__cards      
+      grid-template: 1fr /1fr
+      grid-gap: 30px
+      justify-content: center  
+    &__card
+      max-width: 500px
+      width: 100%
+      max-height: 600px
+      &--1
+        display: flex
+        flex-direction: column
+        max-width: 500px
+        width: 100%
+        grid-row: 1
+        grid-column: 1
+    &__offer
+      padding: 8px 12px
+      &--1
+        padding: 8px 12px
+    &__image
+      max-width: 500px
+      width: 100%
+      &--1
+        max-width: 500px
+        width: 100%
+        height: 300px
+        border-radius: 8px 8px 0px 0px;
+    &__booking
+      max-width: 500px
+      width: 100%
+      padding: 30px 40px 30px 40px
+      &--1
+        max-width: 500px
+        width: 100%
+        height: 300px
+        border-radius: 0px 0px 8px 8px;
+        padding: 30px 40px 30px 40px
+    &__description, &__ratings
+      display: none
+    &__name
+      font-size: 18px;
+      line-height: 23px;
+      padding-bottom: 23px
+    &__button
+      font-size: 12px;
+      line-height: 16px;
+      padding: 11px 27px
+  .old-price
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    padding-bottom: 5px
+  .new-price
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
   .footer
     &-wrapper
       grid-template-columns: 1fr 
@@ -306,52 +391,62 @@
       margin-bottom: 10px
 @media (max-width: 380px)
   .container
-    max-width: 350px
+    max-width: 340px
     width: 92%
   .hotel
     &__slider
-      max-width: 350px
+      max-width: 340px
       max-height: 179px
   .other-hotels
     &__cards
       grid-gap: 20px
     &__card
+      max-width: 340px
+      width: 100%
       &--1
-        max-width: 310px
+        max-width: 340px
+        width: 100%
     &__image, &__booking
-      max-width: 310px
+      max-width: 340px
+      width: 100%
   .footer
     &__message
-      max-width: 350px
-      width: 92%
+      max-width: 340px
+      width: 100%
     &__input
-      max-width: 350px
-      width: 92%
+      max-width: 340px
+      width: 100%
 @media (max-width: 330px)
+  .container
+    max-width: 280px
+    width: 92%
   .other-hotels
     padding-top: 30px
     padding-bottom: 50px
     &__title
       font-size: 26px
       line-height: 34px
-      padding-bottom: 35px
-    
+      padding-bottom: 35px    
     &__cards
-      grid-template-columns: repeat(1, auto)
-      grid-template-rows: repeat(1, auto)
-      justify-content: center
       grid-gap: 30px
     &__card
-      max-height: 400px
+      max-width: 280px
+      width: 100%
       &--1
-        max-width: 250px
+        max-width: 280px
+        width: 100%
         max-height: 400px
     &__image, &__booking
-      max-width: 250px
+      max-width: 280px
+      width: 100%
       max-height: 200px
     &__booking
+      max-width: 280px
+      width: 100%
       padding: 20px 12px 15px 20px
       &--1
+        max-width: 280px
+        width: 100%
         height: 200px
         padding: 20px 12px 15px 20px
       &-info
