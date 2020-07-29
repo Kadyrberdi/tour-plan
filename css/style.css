@@ -961,7 +961,7 @@ template {
   padding-bottom: 12px;
 }
 
-.booking__geolocation, .booking__guests, .booking__room {
+.booking-info__geolocation, .booking-info__guests, .booking-info__room {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -2103,7 +2103,7 @@ template {
     padding: 4px 9px;
     font-size: 10px;
   }
-  .booking__geolocation, .booking__guests, .booking__room {
+  .booking-info__geolocation, .booking-info__guests, .booking-info__room {
     font-size: 10px;
   }
   .old-price {
