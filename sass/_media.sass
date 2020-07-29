@@ -269,6 +269,10 @@
     .new-price
       font-size: 18px
   .footer
+    &__title
+      font-size: 11px;
+    &__item, &__text
+      font-size: 10px
     &__input
       flex-basis: 100%
 @media ( max-width: 576px )
@@ -351,33 +355,33 @@
       grid-row-gap: 30px
       margin-bottom: 30px
     &__title
+      font-size: 18px;
       &--social
         margin-right: 0
         margin-bottom: 20px
+    &__item, &__text
+      font-size: 14px
     &__social
       &-network
         display: grid
         justify-content: start
         grid-row: 2
-        grid-column: span 1
       &-links
         max-width: 85px
     &__legal
       grid-row: 3
-      grid-column: span 1
     &__additional
       grid-row: 4
-      grid-column: span 1
     &__categories
       grid-row: 5
-      grid-column: span 1
     &__contact
       &-details
         grid-row: 6
-        grid-column: span 1
       &-form
         grid-row: 7
-        grid-column: span 1
+    &__input, &__message
+      max-width: 500px
+      width: 100%
     &__button
       order: 2
     &__info
