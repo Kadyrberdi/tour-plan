@@ -396,6 +396,28 @@ template {
   height: 40px;
 }
 
+.navbar-top__search_input {
+  width: 350px;
+  height: 100%;
+  padding-left: 23px;
+  padding-right: 75px;
+  background: #F5FAFE;
+  border: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+}
+
+.navbar-top__search_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 100%;
+  border: none;
+  background: #EC1F46;
+}
+
 .navbar-top__search--mobile--visible {
   display: none;
 }
@@ -443,28 +465,6 @@ template {
 
 .logo {
   width: 177px;
-}
-
-.search__input {
-  width: 350px;
-  height: 100%;
-  padding-left: 23px;
-  padding-right: 75px;
-  background: #F5FAFE;
-  border: none;
-  font-size: 12px;
-  line-height: 15px;
-  color: #333333;
-}
-
-.search__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 65px;
-  height: 100%;
-  border: none;
-  background: #EC1F46;
 }
 
 .user__avatar {
@@ -1612,7 +1612,7 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-  .search__input {
+  .navbar-top__search_input {
     width: 340px;
   }
   .hotel-grid {
@@ -1744,7 +1744,7 @@ template {
     width: 92%;
   }
   body {
-    padding-top: 108px;
+    padding-top: 100px;
   }
   .navbar-bottom {
     display: none;
@@ -1780,7 +1780,7 @@ template {
     margin-left: 0;
     margin-bottom: 40px;
   }
-  .navbar__mobile--fixed {
+  .navbar__mobile-fixed {
     position: fixed;
     left: 0;
     top: 0;
@@ -2204,7 +2204,7 @@ template {
     max-width: 340px;
     width: 92%;
   }
-  .search__input {
+  .navbar-top__search_input {
     max-width: 340px;
     width: 92%;
   }

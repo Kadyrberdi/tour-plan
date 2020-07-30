@@ -41,9 +41,11 @@
       &__link
         font-size: 12px
         line-height: 15px
-  .search
-    &__input
-      width: 340px
+  .navbar
+    &-top
+      &__search
+        &_input
+          width: 340px
   .hotel
     &-grid
       flex-direction: column
@@ -125,7 +127,7 @@
     max-width: 576px
     width: 92%
   body
-    padding-top: 108px
+    padding-top: 100px
   .navbar
     &-bottom
       display: none
@@ -156,7 +158,7 @@
             margin-left: 0
             margin-bottom: 40px
     &__mobile
-      &--fixed
+      &-fixed
         position: fixed
         left: 0
         top: 0
@@ -442,10 +444,12 @@
   .container
     max-width: 340px
     width: 92%
-  .search
-    &__input
-      max-width: 340px
-      width: 92%
+  .navbar
+    &-top
+      &__search
+        &_input
+          max-width: 340px
+          width: 92%
   .hotel
     &__slider
       max-width: 340px
