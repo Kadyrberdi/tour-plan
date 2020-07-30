@@ -8,10 +8,23 @@
     padding-bottom: 40px
     &__menu-button
       display: none
+      outline: none
     &__search
       margin-right: auto
-      margin-left: 108px
-  
+      margin-left: 108px  
+      display: flex
+      position: relative
+      overflow: hidden
+      border-radius: 6px
+      height: 40px
+      &--mobile--visible
+        display: none      
+    &__user
+      display: flex
+      align-items: center
+      text-decoration: none
+      &--mobile--visible
+        display: none
   &-bottom
     background-color: $dark
   &-menu
@@ -29,12 +42,7 @@
       line-height: 18px;
 .logo
   width: 177px
-.search
-  display: flex
-  position: relative
-  overflow: hidden
-  border-radius: 6px
-  height: 40px
+.search  
   &__input
     width: 350px
     height: 100%
@@ -54,9 +62,7 @@
     border: none
     background: $primary
 .user
-  display: flex
-  align-items: center
-  text-decoration: none
+  
   &__avatar
     width: 40px
     height: 40px

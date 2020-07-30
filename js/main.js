@@ -29,3 +29,11 @@ var reviewSlider = new Swiper(".reviews-slider", {
     onlyInViewport: true,
   },
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("ejen");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
